@@ -1,0 +1,44 @@
+
+<!--
+
+The general rules for constructing names for variables (unique identifiers) are:
+
+  -  Names can contain letters, digits, underscores, and dollar signs.
+  -  Names must begin with a letter
+  -  Names can also begin with $ and _ (but we will not use it in this tutorial)
+  -  Names are case sensitive (y and Y are different variables)
+  -  Reserved words (like JavaScript keywords) cannot be used as names
+
+  -->
+
+    <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2>Variables in JavaScript </h2>
+    <p id = "demo"></p>
+    <p id = "demo1"></p>
+    <p id = "demo2"></p>
+    <p id = "demo3"></p>
+
+
+    <script>
+      //declaring all the variables at first is a good practise.
+
+      var a , b , c ;
+      a = 5 ;
+      b = 10 ;
+      c = "Suman" ;
+      document.getElementById("demo").innerHTML = a ;
+      document.getElementById('demo1').innerHTML = a+b ;
+      document.getElementById('demo2').innerHTML = a+b+c ; // Here , c is string . so it will add a and b and then concatenate with c.
+      document.getElementById('demo3').innerHTML = c+a+b ; //Here c is string . so it will concatenate with a and b.
+    </script>
+
+
+
+  </body>
+</html>
