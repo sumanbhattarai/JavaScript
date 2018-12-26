@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id = "demo"></p>
+    <script>
+      var suman = { subject:"BESE" ,
+                    age:20 ,
+                    address:"Narayangarh" ,
+                    quote: function()
+                    {
+                      var x = "Js is love." ;
+                      return x;
+                    }
+                  } ;
+      document.getElementById('demo').innerHTML = "My name is Suman . I am a student of " + suman.subject + ". I am " +
+                                                  suman.age + ". I live in " + suman.address + ". " + suman.quote();
+
+    </script>
+
+  </body>
+</html>
