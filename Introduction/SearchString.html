@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p id ="demo"></p>
+    <p id ="demo1"></p>
+    <p id ="demo2"></p>
+    <p id ="demo3"></p>
+    <script>
+      var a = "I love Nepal."
+      var b = "Ram is a boy . Ram lives in Nepal ."
+      //It counts from 0 .
+      document.getElementById('demo').innerHTML = a.indexOf("love");
+      document.getElementById('demo1').innerHTML = b.lastIndexOf("Ram");
+      document.getElementById('demo2').innerHTML = b.indexOf("Ram" , 7);
+      document.getElementById('demo3').innerHTML = a.search("love");
+
+    </script>
+
+  </body>
+</html>
