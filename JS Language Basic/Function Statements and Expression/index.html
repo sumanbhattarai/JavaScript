@@ -1,0 +1,43 @@
+<html>
+    <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Function Statement and Expression</title>
+    </head>
+    <body>
+
+    </body>
+    <script>
+        //function declaration
+       // function info(job , name){}
+
+        //function expression.
+     var info =   function(job , name) 
+     {
+         switch(job)
+         {
+             case 'Teacher' :
+             return name + ' teaches.' ;
+             // No break since here is return.
+
+
+             case 'Designer' : 
+             return name + ' designs.' ;
+
+
+             case 'Software Engineer' :
+             return name + ' develops Software.' ;
+
+         }
+
+
+     }
+
+     console.log(info('Software Engineer' , 'Suman'));
+
+        
+
+
+    
+    </script>
+</html>
