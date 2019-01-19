@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Passing Functions as an Arguments</title>
+</head>
+<body>
+
+<script>
+
+    // Examples of callback functions.
+    // Lets make a machine that takes age array and returns 18+ if age is above 18 and "Child" for below 18.
+    // Output should also be in array.
+
+
+    var ages = [ 19 , 30 , 18 , 29 , 11 ,26 , 9] ;
+
+    function checkAge ( el )
+    {
+        if(el>=18)
+        {
+            return "18+" ;
+        }
+        else if(el<18)
+        {
+            return "Child" ;
+        }
+    }
+
+    function check( arr , fn) 
+    {
+        var output  = [] ;
+        for(var i = 0 ; i < arr.length ; i++)
+        {
+            output.push(fn(arr[i])) ;
+        }
+        return output ;
+    }
+
+    var result = check( ages , checkAge ) ;
+    console.log(result) ;
+    
+    
+    
+</script>
+    
+</body>
+</html>
