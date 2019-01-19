@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Functions returning functions </title>
+</head>
+<body>
+
+    <script>
+
+        // Functions returning functions
+
+        function ageReview(age)
+        {
+            if(age<18)
+            {
+                return function(name) // It is an anonymous function because it doesnot have name.
+                {
+                    console.log(name + ',' + ' you are still a child.') ;
+                }
+            }
+
+            else if (age===18)
+            {
+                return function(name) // It is an anonymous function because it doesnot have name.
+                {
+                    console.log(name + ',' + ' you are now 18.') ;
+                }
+
+            }
+            else 
+            {
+                return function(name) // It is an anonymous function because it doesnot have name.
+                {
+                    console.log(name + ',' + ' you are now Adult.') ;
+                }
+
+            }
+        }
+
+        var SB = ageReview(19) ;
+        SB('Suman') ;
+       
+        // Another way of invoking this function.
+
+        ageReview(15)('Pramish');
+        
+        
+        
+    </script>
+    
+</body>
+</html>
