@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Bind , Call and Apply </title>
+</head>
+<body>
+
+    <script>
+
+        // function.apply(thisArg, [argsArray])
+
+        // Borrowing method using call
+
+        var person = {
+            
+            
+            calculateAge : function(fullName ,age)
+            {
+                if(age >=18)
+                {
+                    console.log(fullName + ' , you are adult.') ;
+                }
+                else
+                {
+                    console.log(fullName + ' , you are still a child.');
+                }
+            }
+        };
+
+        person.calculateAge('Suman Bhattarai' , 19);
+
+        
+
+        var sujan = {
+            
+        };
+
+        //Borrowing method using call 
+
+        person.calculateAge.call(sujan ,'Sujan Bhattarai', 20);
+
+        // Using bind
+        // bind allows us to create a copy of a function 
+
+        var Saroj = person.calculateAge.bind(person ) ;
+        Saroj('Saroj Neupane' , 17) ;
+
+        var Sandesh = person.calculateAge.bind(person , 'Sandesh Shrestha' , 20) ;
+        Sandesh();
+       
+    
+    
+    
+    
+    
+    </script>
+    
+</body>
+</html>
