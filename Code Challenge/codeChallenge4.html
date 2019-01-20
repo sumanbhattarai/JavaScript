@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code Challenge</title>
+</head>
+<body>
+
+
+<script>
+
+
+var Question = function( choice)
+{
+    if (choice===1)
+    {
+        console.log("What is the captial city of Nepal ? ") ;
+        console.log('1: New Delhi') ;
+        console.log('2: Kathmandu') ;
+        console.log('3: Beijing') ;
+        var correctAns = 2 ;
+        return correctAns ;
+    }
+
+    else if (choice===2)
+    {
+        console.log('Where was Lord Buddha born ?') ;
+        console.log('1: Nepal') ;
+        console.log('2: India') ;
+        console.log('3: Thailand') ;
+        var correctAns = 1 ;
+        return correctAns ;
+
+
+    }
+
+    else
+    {
+        console.log('Who is the prime minister of Nepal ? ') ;
+        console.log('1: Puspa Kamal Dahal \'Prachanda\' ') ;
+        console.log('2: Sher Bahadur Deuwa') ;
+        console.log('3: KP Sharma Oli') ;
+        var correctAns = 3 ;
+        return correctAns
+    }
+
+}
+
+
+
+var choice = Math.floor(Math.random()*3) + 1 ;
+var result = Question(choice);
+
+var answer = window.prompt('Enter your Answer : ') ;
+
+if(Number(answer) === result)
+{
+    console.log('Correct Answer') ;
+} 
+else
+{
+    console.log('Incorrect Answer');
+}
+
+
+
+
+
+
+
+</script>
+    
+</body>
+</html>
