@@ -11,9 +11,34 @@ var BudgetModule = (function(){
 // Lets create another module complete independent of BudgetModule .
 
 var UIModule = (function(){
-    
-    //Code
 
+    var DOMStrings = { // It is done so that if we change the name of group in index.html file then we can just change the name here. 
+        type : '.add__type' ,
+        description : '.add__description' ,
+        value : '.add__value' ,
+        button :  '.add__btn'
+    } ;
+
+    return {
+        input : function() 
+        {
+            return {
+                type : document.querySelector(DOMStrings.type).value ,
+                description : document.querySelector(DOMStrings.description).value ,
+                value : document.querySelector(DOMStrings.value).value 
+                
+
+            };
+        },
+
+        getDOMStrings : function()
+        {
+            return DOMStrings ;
+        }
+
+        
+    };
+    
 
 }());
 
@@ -21,12 +46,16 @@ var UIModule = (function(){
 
 var LinkModule = (function(bm , um){
 
+    var strings = um.getDOMStrings() ;
+
     // Following DRY principle.
     var task = function()
     {
         // List of task to do when the button is clicked.
 
         // 1. Get the input values 
+
+        console.log(um.input()) ;
 
         // 2. Add the item to the Budgte Module.
 
@@ -36,10 +65,10 @@ var LinkModule = (function(bm , um){
 
         // 5. Update th UI .
 
-        console.log('Enter key has been pressed') ;
+         
     }
 
-    document.querySelector('.add__btn').addEventListener('click' , task );
+    document.querySelector(strings.button).addEventListener('click' , task );
 
     // This should work not only when the button is clicked but also when the user press the return key. So , lets create a new event listener for this.
     // Since , this event donot specify any selection of ids and groups , we are making it global.
