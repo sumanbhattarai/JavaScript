@@ -21,6 +21,29 @@ var UIModule = (function(){
 
 var LinkModule = (function(bm , um){
 
-    // Code
+    document.querySelector('.add__btn').addEventListener('click' , function(){
+
+        // List of task to do when the button is clicked.
+
+        // 1. Get the input values 
+
+        // 2. Add the item to the Budgte Module.
+
+        // 3. Add the item to the UI Module .
+
+        // 4. Calculate the result.
+
+        // 5. Update th UI .
+
+    });
+
+    // This should work not only when the button is clicked but also when the user press the return key. So , lets create a new event listener for this.
+    // Since , this event donot specify any selection of ids and groups , we are making it global.
+
+    document.addEventListener('keypress' , function(event){ // We can puy anyname instead of event.
+        console.log(event);
+
+
+    }) ;
 
 }( BudgetModule , UIModule )) ;
