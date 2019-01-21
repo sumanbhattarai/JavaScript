@@ -40,8 +40,17 @@ var LinkModule = (function(bm , um){
     // This should work not only when the button is clicked but also when the user press the return key. So , lets create a new event listener for this.
     // Since , this event donot specify any selection of ids and groups , we are making it global.
 
-    document.addEventListener('keypress' , function(event){ // We can puy anyname instead of event.
-        console.log(event);
+    document.addEventListener('keypress' , function(event){ // We can put anyname instead of event.
+        
+        // From the console we came to know that keypress is actually an object.
+        // keypress.keycode is where the code of the key is stored.
+        // Use https://keycode.info/ to get the keycode .
+        // Key code for return key is 13 .
+
+        if(event.keyCode === 13 )
+        {
+            console.log('Enter key has been pressed') ;
+        }
 
 
     }) ;
