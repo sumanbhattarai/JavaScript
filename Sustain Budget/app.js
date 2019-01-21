@@ -46,29 +46,12 @@ var UIModule = (function(){
 
 var LinkModule = (function(bm , um){
 
-    var strings = um.getDOMStrings() ;
+    
 
-    // Following DRY principle.
-    var task = function()
+    var setupEvent = function()
     {
-        // List of task to do when the button is clicked.
-
-        // 1. Get the input values 
-
-        console.log(um.input()) ;
-
-        // 2. Add the item to the Budgte Module.
-
-        // 3. Add the item to the UI Module .
-
-        // 4. Calculate the result.
-
-        // 5. Update th UI .
-
-         
-    }
-
-    document.querySelector(strings.button).addEventListener('click' , task );
+        var strings = um.getDOMStrings() ;
+        document.querySelector(strings.button).addEventListener('click' , task );
 
     // This should work not only when the button is clicked but also when the user press the return key. So , lets create a new event listener for this.
     // Since , this event donot specify any selection of ids and groups , we are making it global.
@@ -81,13 +64,46 @@ var LinkModule = (function(bm , um){
         // Key code for return key is 13 .
         // Some old browers may only have which property so lets us both to be aware.
 
-        if(event.keyCode === 13 || event.which  === 13 )
-        {
-            task();
+            if(event.keyCode === 13 || event.which  === 13 )
+            {
+                task();
             
+            }
+        }) ;
+
+    };
+
+    // Following DRY principle.
+    var task = function()
+    {
+        // List of task to do when the button is clicked.
+
+        // 1. Get the input values 
+        
+
+
+        // 2. Add the item to the Budgte Module.
+
+        // 3. Add the item to the UI Module .
+
+        // 4. Calculate the result.
+
+        // 5. Update th UI .
+
+         
+    }
+
+    return {
+        init : function()
+        {
+           
+            setupEvent();
         }
+    }
 
-
-    }) ;
+    
 
 }( BudgetModule , UIModule )) ;
+
+
+LinkModule.init();
