@@ -3,21 +3,7 @@
 
 var BudgetModule = (function(){
 
-    var x = 5 ; // It is private and is inaccessible from outer world.
-
-    var sum = function(a) // It is also private .
-    {
-        return x + a ;
-    }
-
-    // In order to access this , lets return an object .
-    return {
-         
-            show : function(a)
-            {
-                return sum(a) ;
-            }
-    }
+    // Code
 
 
 })();
@@ -31,12 +17,10 @@ var UIModule = (function(){
 
 }());
 
-// We can see that this two module are complete independent with each other so lets create a third module than cae use these two modules.
+// We can see that this two module are complete independent with each other so lets create a third module than can use these two modules.
 
 var LinkModule = (function(bm , um){
 
-    var output  =  bm.show(23) ;
-    console.log(output);
-
+    // Code
 
 }( BudgetModule , UIModule )) ;
