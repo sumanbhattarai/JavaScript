@@ -1,4 +1,5 @@
 
+
 // Lets Create a simple module
 
 var BudgetModule = (function(){
