@@ -1,0 +1,100 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    
+    
+
+            .username , .password , #sub
+            {
+                 position: relative;
+                 top : 50px ;
+                 left : 300px;
+            }
+
+            .error
+            {
+    
+                position: relative;
+                animation: shake .1s linear;
+                animation-iteration-count: 3;
+            }
+
+            @keyframes shake {
+                0% { left: 275px; }
+                100% { right: 325px; }
+            }
+
+    </style>
+</head>
+<body>
+
+    <input type="text" class='username' placeholder="Username"> 
+    <input type="password" class="password" placeholder="Password">
+    <input type="submit" id="sub" value="next">
+
+    <script>
+
+
+
+
+
+
+function validate()
+{
+    console.log('Clicked');
+    if(document.querySelector('.username').value === '' && document.querySelector('.password').value === '')
+    {
+    document.querySelector('.username').classList.add('error') ;
+    document.querySelector('.password').classList.add('error') ;
+
+    setTimeout(function() {
+    document.querySelector('.username').classList.remove('error');
+    document.querySelector('.password').classList.remove('error');
+    }, 300);
+    
+
+    }
+
+    else if(document.querySelector('.username').value === '' )
+    {
+    document.querySelector('.username').classList.add('error') ;
+    setTimeout(function() {
+    document.querySelector('.username').classList.remove('error');
+    }, 300);
+    }
+
+    else if (document.querySelector('.password').value === '')
+    {
+        document.querySelector('.password').classList.add('error') ;
+    setTimeout(function() {
+    document.querySelector('.password').classList.remove('error');
+    }, 300);
+
+    }
+
+    else
+    {
+        console.log('Submitted');
+    }
+}
+
+document.querySelector('#sub').addEventListener('click'  , validate) ;
+
+    
+    
+    
+    
+    
+    
+    </script>
+    
+</body>
+</html>
