@@ -14,6 +14,7 @@
  {
      var name = 'Suman';
      let no = 10 ;
+     console.log(no); // It will return 10 ;
  }
  console.log(name) ; // It will return Suman since var has function scope not block scope.
  // console.log(no); // It will alsp give error since let has block scope and it is not accessible outside {} .
