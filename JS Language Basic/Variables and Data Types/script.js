@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Variables and Data Types</title>
-  </head>
-    <body>
-        
-    </body>
-    <script>
+
         var firstName = 'Suman' ; //string
         console.log(firstName);
 
@@ -29,6 +20,3 @@
         // Variables name cannot be the keyword.
         // Using camelCasing to name the variable. Note: It is not the rule , but the best practice.
         //Five types of DataTypes in JS. They are : Number , String , Boolean , NULL and Undefined.
-
-    </script>
-</html>

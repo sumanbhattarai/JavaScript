@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Basic Operators</title>
-  </head>
-    <body>
-        
-    </body>
-    <script>
 
         var age = 2018 - 1999 ;
         console.log(age);
@@ -31,8 +21,3 @@
         console.log(typeof q);
     
     
-    
-    
-    
-    </script>
-    </html>

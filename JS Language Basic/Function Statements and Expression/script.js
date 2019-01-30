@@ -1,13 +1,4 @@
-<html>
-    <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Function Statement and Expression</title>
-    </head>
-    <body>
 
-    </body>
-    <script>
         //function declaration
        // function info(job , name){}
 
@@ -36,8 +27,3 @@
      console.log(info('Software Engineer' , 'Suman'));
 
         
-
-
-    
-    </script>
-</html>

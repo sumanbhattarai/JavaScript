@@ -1,13 +1,3 @@
-<html>
-        <html lang="en" dir="ltr">
-                <head>
-                  <meta charset="utf-8">
-                  <title>Arrays in JS</title>
-                  </head>
-                  <body>
-
-                  </body>
-                  <script>
 
                       //Arrays
 
@@ -52,5 +42,3 @@
 
 
 
-                  </script>
-</html>

@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Boolean Logic</title>
-  </head>
-    <body>
-        
-    </body>
-    <script>
 
         var firstName = 'Suman' ;
         var age = 19 ;
@@ -27,6 +17,3 @@
         }
 
     
-    </script>
-
-    </html>

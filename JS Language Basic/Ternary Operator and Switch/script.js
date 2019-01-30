@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>The Ternary Operator and Switch Statements</title>
-  </head>
-    <body>
-        
-    </body>
 
-    <script>
         var firstName = 'Suman' ;
         var age = 19 ;
 
@@ -59,9 +49,3 @@
             break ;
         }
 
-
-
-    </script>
-
-
-</html>

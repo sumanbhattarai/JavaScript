@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Functions</title>
-  </head>
-    <body>
-        
-    </body>
-    <script>
-    
+
     // No need to keep var inside formal parameter.
     function sum(x,y)
     {
@@ -20,7 +10,4 @@
     console.log('Sum of 5 and 3 is : ' + sum(5,3));
     console.log('Sum of 4 and 6 is : ' + sum(4,6));
 
-    </script>
-
-
-    </html>
+   

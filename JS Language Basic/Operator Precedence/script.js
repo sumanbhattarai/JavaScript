@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Operator Precedence</title>
-  </head>
-    <body>
-        
-    </body>
-    <script>
+
     var now = 2018;
     var birthYear = 1999;
     var fullAge = 19;
@@ -34,5 +25,4 @@
     x++ ;
     console.log(x);
     
-    </script>
-    </html>
+    

@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Loops and Iteration</title>
-</head>
-<body>
-    
-</body>
-<script>
+
 
 //For loop
 
@@ -74,7 +63,3 @@ for ( var z = info.length-1 ; z >= 0 ; z--)
     console.log(info[z]);
 }
 
-
-
-</script>
-</html>
