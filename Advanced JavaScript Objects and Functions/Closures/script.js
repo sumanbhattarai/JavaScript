@@ -1,16 +1,4 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Closures</title>
-</head>
-<body>
-
-    <script>
-
         // Closure
         // A closure is an inner function that has access to the outer (enclosing) function’s variables—scope chain.
         // An inner function has always access to the variables and parameters its outer function , even after the outer function has returned.
@@ -31,7 +19,4 @@
 
 
 
-    </script>
-    
-</body>
-</html>
+   
