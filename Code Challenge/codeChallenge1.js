@@ -1,4 +1,4 @@
-<!--
+/*
 
 Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula:
 BMI = mass / height^2.
@@ -8,28 +8,8 @@ BMI = mass / height^2.
 3. Create a boolean variable containing info about whether Mark has a higher BMI than John.
 4. Print  a string to the console containingt the variable from step 3 .
 
+*/
 
-
-
-
-
-
--->
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Coding Challenge</title>
-  </head>
-    <body>
-        
-    </body>
-    <script>
         var markMass = prompt('Enter Mark\'s mass: ') ;
         var markHeight = prompt('Enter Mark\'s Height') ;
         var johnMass = prompt('Enter John\'s mass: ') ;
@@ -40,7 +20,4 @@ BMI = mass / height^2.
 
         var result = markBIM>johnBIM ;
         console.log("Is Mark\'s BIM higher than John\'s ?" + result);
-    
-    </script>
-
-    </html>
+   

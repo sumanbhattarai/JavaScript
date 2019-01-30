@@ -1,12 +1,3 @@
-<html lang="en" dir="ltr">
-        <head>
-          <meta charset="utf-8">
-          <title>Code Challenge</title>
-          </head>
-          <body>
-              
-          </body>
-          <script>
 
               /*
               John and his family went to a holiday and
@@ -52,11 +43,3 @@
               console.log(finalPaid);
 
 
-
-
-
-
-
-          
-          </script>
-          </html>

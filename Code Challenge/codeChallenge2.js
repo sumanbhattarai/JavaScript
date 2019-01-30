@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Coding Challenge</title>
-  </head>
-    <body>
-        
-    </body>
-    <script>
+
     
 
     /*
@@ -66,10 +57,3 @@
 
      
      
-
-    
-    
-    
-    </script>
-
-    </html>
