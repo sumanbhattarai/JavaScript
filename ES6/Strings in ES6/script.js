@@ -33,4 +33,7 @@ console.log(fullname.includes(' ')) ; // It will return true since the fullname 
 console.log(fullname.includes('nB')); // It will return false.
 console.log(fullname.includes('n B')); // It will return true.
 
+console.log(fullname.repeat(3)); // It will return fullname 3 times without space.
+console.log(`${fullname} `.repeat(3)); // It will return fullname with spaces.
+
 
