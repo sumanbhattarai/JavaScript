@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>THIS keyword</title>
-</head>
-<body>
-    
-</body>
-
-<script>
 
 
 console.log(this) ; // this keyword in the global execution state is very simply the window object.
@@ -76,5 +63,3 @@ Nibesh.age();
 
 // Note : Value of this varibale is assigned only when the method in invoked.
 
-</script>
-</html>
