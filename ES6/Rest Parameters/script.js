@@ -42,6 +42,7 @@ function isAdult(limit)
 isAdult(18 , 20, 32 , 12 , 45 , 15 , 7) ;
 
 
+
 // ES6
 
 function isAdult6 (limit , ...years )
