@@ -58,14 +58,14 @@ console.log(message) ;
 
 
 
-// If you want to do all the promises start at the same time ......
+// If you want all promises to start at the same time and after all promise is finished then something ......
 
 Promise.all([getUp , brushTeeth() , wentCollege()]).then(()=>{
     console.log('All task finished') ;
 });
 
 
-// If you want to finish any one of them and so something .....
+// If you want to finish any one of them and so do something .....
 
 
 Promise.race([getUp , brushTeeth() , wentCollege()]).then(()=>{
