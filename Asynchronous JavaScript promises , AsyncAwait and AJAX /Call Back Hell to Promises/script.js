@@ -65,6 +65,12 @@ Promise.all([getUp , brushTeeth() , wentCollege()]).then(()=>{
 });
 
 
+// If you want to finish any one of them and so something .....
+
+
+Promise.race([getUp , brushTeeth() , wentCollege()]).then(()=>{
+    console.log('Any one  task is finished') ;
+});
 
 
 
