@@ -5,6 +5,9 @@
 // The async function declaration defines an asynchronous function, which returns an AsyncFunction object.
 // It was introduced in ES8 .
 
+
+// Producing the promises .
+
 const getUp = new Promise((resolve , reject) =>{
     resolve('I got Up') ;
 });
@@ -23,6 +26,8 @@ return  new Promise((resolve,reject)=>{
 });
 }
 
+// Different way of consuming the promises .
+// It is called Async Await .
 
 async function task()
 {
