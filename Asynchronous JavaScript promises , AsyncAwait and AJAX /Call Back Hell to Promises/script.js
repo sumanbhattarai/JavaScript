@@ -35,27 +35,25 @@ const getUp = new Promise((resolve , reject) =>{
 });
 
 
-const brushTeeth = function(){
+const brushTeeth = function(message){
 return new Promise((resolve , reject)=>{
-    resolve('I brushed my teeth') ;
+    resolve(`${message} and I brushed my teeth.`) ;
 });
 }
 
-const wentCollege = function(){
+const wentCollege = function(message){
 return  new Promise((resolve,reject)=>{
-    resolve('I went to College') ;
+    resolve(`${message} and I went to the College.`) ;
 
 });
 }
 
 getUp.then((message)=>{
-console.log(message);
-return brushTeeth();
-}).then((message1)=>{
-console.log(message1) ;
-return wentCollege(); 
-}).then((message2)=>{
-console.log(message2) ;
+return brushTeeth(message);
+}).then((message)=>{
+return wentCollege(message); 
+}).then((message)=>{
+console.log(message) ;
 }) ;
 
 
