@@ -36,6 +36,14 @@ async function task()
      const result = await wentCollege(brushTeethMessage);
      console.log(result);  
 
+     const status  = ' This is a way to return something from a asycn function . ' ;
+     return status ;
+
 }
 
-task();
+task().then((output)=>{
+    console.log(output) ;
+
+}).catch(()=>{
+    console.log('Error Occured.');
+});
