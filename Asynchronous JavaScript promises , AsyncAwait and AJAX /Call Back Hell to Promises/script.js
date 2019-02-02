@@ -58,4 +58,14 @@ console.log(message) ;
 
 
 
+// If you want to do all the promises start at the same time ......
+
+Promise.all([getUp , brushTeeth() , wentCollege()]).then(()=>{
+    console.log('All task finished') ;
+});
+
+
+
+
+
 
