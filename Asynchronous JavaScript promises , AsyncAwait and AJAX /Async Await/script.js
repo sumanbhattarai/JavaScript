@@ -28,7 +28,7 @@ return  new Promise((resolve,reject)=>{
 
 // Different way of consuming the promises .
 // It is called Async Await .
-
+// Creating an async function.
 async function task()
 {
      const getUpmessage = await getUp ;
@@ -37,7 +37,7 @@ async function task()
      console.log(result);  
 
      const status  = ' This is a way to return something from a asycn function . ' ;
-     return status ;
+     return status ; // We can return in async function.
 
 }
 
