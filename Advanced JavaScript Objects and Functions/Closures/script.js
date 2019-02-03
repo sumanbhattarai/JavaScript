@@ -13,7 +13,7 @@
             }
         }
 
-        checkAge('Suman')(); 
+        checkAge('Suman')();  // Output : Suman, you are 19 years old.
 
 
 
