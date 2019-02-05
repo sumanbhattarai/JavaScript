@@ -50,3 +50,49 @@ var config = {
 console.log(config);
 
 // Note : It is very useful when you need to create custom objects based on some variables.
+
+// Object.assign() in ES6
+
+// ES6 adds a new Object method assign() that allows us to combine multiple sources into one target to create a single new object.
+// Object.assign() is also useful for creating a duplicate of an existing object.
+
+let person = {
+    name: 'Jack',
+    age: 18,
+    sex: 'male'
+  };
+  let student = {
+    name: 'Bob',
+    age: 20,
+    xp: '2'
+  };
+  let newStudent = Object.assign({}, person, student); 
+  console.log(newStudent); // {name:'Bob' , age:20 , sex:'male' , xp: '2'}
+
+  // Order is important because properties in the second parameter will be overridden by properties of the same name in third parameter, and so on.
+
+
+  let info = {
+    name: 'Jack',
+    age: 18
+  };
+  
+  let newPerson = info; //  newPerson references person
+  newPerson.name = 'Bob'; 
+  
+  console.log(info.name); // Bob
+  console.log(newPerson.name); // Bob
+
+ // To avoid this (mutations), use Object.assign() to create a new object.
+
+let info2 = {
+  name: 'Jack',
+  age: 18
+};
+
+let newPerson2 = Object.assign({}, info2); 
+// OR , let newPerson = Object.assign({}, info2 , {name: 'Bob'});
+newPerson2.name = 'Bob';
+
+console.log(info2.name); // Jack
+console.log(newPerson2.name); // Bob
