@@ -20,6 +20,7 @@ SB.calcage();
 
 
 // Using classes in ES6 
+// Class Declarations are not hoisted while Function Declarations are. If you try to access your class before declaring it, ReferenceError will be returned.
 
 class detail {
     constructor(name , gender , dob )
