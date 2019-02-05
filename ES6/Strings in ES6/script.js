@@ -37,3 +37,4 @@ console.log(fullname.repeat(3)); // It will return fullname 3 times without spac
 console.log(`${fullname} `.repeat(3)); // It will return fullname with spaces.
 
 
+// To escape a backtick in a template literal, put a backslash \ before the backtick.
