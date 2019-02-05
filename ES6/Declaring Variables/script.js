@@ -84,3 +84,6 @@ for( let i = 1 ; i <=5 ; i++)
 console.log(i) ; // It will return 20 .
 
 // Here, the i variable is accessible only within the scope of the for loop, where it is needed. 
+
+// const is not subject to Variable Hoisting too, which means that const declarations do not move to the top of the current execution context.
+// Also note that ES6 code will run only in browsers that support it. Older devices and browsers that do not support ES6 will return a syntax error.
