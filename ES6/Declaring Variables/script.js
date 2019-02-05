@@ -74,7 +74,7 @@ returnAge('Suman' , 19) ;
 
 */
 
-
+//let is not subject to Variable Hoisting, which means that let declarations do not move to the top of the current execution context.
 
 let i = 20 ;
 for( let i = 1 ; i <=5 ; i++)
@@ -82,3 +82,5 @@ for( let i = 1 ; i <=5 ; i++)
     console.log(i); // it will return 1 , 2 , 3 ,4 ,5
 }
 console.log(i) ; // It will return 20 .
+
+// Here, the i variable is accessible only within the scope of the for loop, where it is needed. 
