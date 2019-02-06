@@ -18,7 +18,6 @@ XO("zzoo") => false
 function XO(str) {
     const data = str.toUpperCase() ;
     const dataArr = data.split("");
-    console.log(dataArr);
     var countO = 0 ;
     var countX = 0 ;
 
@@ -44,3 +43,16 @@ function XO(str) {
 }
 
 console.log(XO('oxOxX'));
+
+// Alternate Best way 
+
+function XO1(str) {
+    var sum = 0;
+    for(var i=0; i<str.length; i++){
+      if(str[i].toLowerCase() == 'x') sum++;
+      if(str[i].toLowerCase() == 'o') sum--;
+    }
+    return sum == 0;
+  }
+
+  console.log(XO1('OOooXxXx'));
