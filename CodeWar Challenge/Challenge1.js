@@ -10,6 +10,9 @@ You are given an array (which will have a length of at least 3, but could be ver
 
 */
 
+
+/*
+
 function findOutlier(integers){
     var countEven = 0;
     var countOdd = 0 ;
@@ -42,4 +45,17 @@ function findOutlier(integers){
       }
     }
 
-  console.log(findOutlier([1,1,0,1,1]));
+
+    */
+
+  console.log(findOutlier([1,1,8,1,1]));
+
+
+
+  // Alternate way to do ths .
+
+  function findOutlier(int){
+    var even = int.filter(a=>a%2==0);
+    var odd = int.filter(a=>a%2!==0);
+    return even.length==1? even[0] : odd[0];
+  }
