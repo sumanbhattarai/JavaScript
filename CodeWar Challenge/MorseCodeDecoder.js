@@ -1,6 +1,8 @@
 
 
 const decodeMorse = function(morseCode) {
+
+    // Below is the respective morse code of alphabets .
     var ref = { 
         '.-':     'a',
         '-...':   'b',
