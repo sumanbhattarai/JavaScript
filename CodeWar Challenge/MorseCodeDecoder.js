@@ -45,4 +45,4 @@ const decodeMorse = function(morseCode) {
       return morseCode.split('   ').map(a => a.split(' ').map(b => ref[b]).join('')).join(' ').toUpperCase();
 }
 
-console.log(decodeMorse('.... . -.--   .--- ..- -.. .'));
+console.log(decodeMorse('... ..- -- .- -.   -... .... .- - - .- .-. .- ..'));
