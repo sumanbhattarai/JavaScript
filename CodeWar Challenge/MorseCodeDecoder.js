@@ -2,7 +2,7 @@
 
 const decodeMorse = function(morseCode) {
 
-    // Below is the respective morse code of alphabets .
+    // Below is the respective morse code of alphabets and numbers.
     var ref = { 
         '.-':     'a',
         '-...':   'b',
