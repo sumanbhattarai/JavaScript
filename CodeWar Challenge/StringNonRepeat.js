@@ -9,37 +9,59 @@ For example, if given the input 'stress', the function should return 't', since 
 */
 
 
-function firstNonRepeatingLetter(s) {
+// function firstNonRepeatingLetter(s) {
 
-    // Add your code here
-    var answer ;
-    const stringArr = s.toUpperCase().split("") ;
-    for( let i = 0 ; i < stringArr.length ; i++ )
-    {
-        for(let j = i+1  ; j < stringArr.length ; j++ )
-        {
-            if( stringArr[i]!==stringArr[j])
-            {
-                answer = stringArr[i] ;
-                continue ;
-            }
-            else
-            {
-                answer = "" ;
-                break ;
-            }
-        }
+//     // Add your code here
+//     var answer ;
+//     const stringArr = s.split("") ;
+//     if(stringArr.length === 1)
+//     {
+//         return s ;
+//     }
+//     for( let i = 0 ; i < stringArr.length ; i++ )
+//     {
+//         for(let j = i+1  ; j < stringArr.length ; j++ )
+//         {
+//             if( stringArr[i].toUpperCase() !== stringArr[j].toUpperCase() )
+//             {
+//                 answer = stringArr[i] ;
+//                 //console.log(answer);
+//                 continue ;
+//             }
+//             else
+//             {
+//                 answer = "" ;
+//                 break ;
+//             }
+//         }
 
-        if(answer !== "")
-        {
-            return answer ;
-        }
+//         if(answer !== "")
+//         {
+//             return answer ;
+//         }
+//         else 
+//         {
+//             continue ;
+//         }
 
-    }
+//     }
     
+//   }
 
 
+// console.log(firstNonRepeatingLetter("moonmen")) ; // d
+
+
+
+function firstNonRepeatedCharacter(string) {
+    for (var i = 0; i < string.length; i++) {
+      var c = string.charAt(i);
+      if (string.indexOf(c) == i && string.indexOf(c, i + 1) == -1) {
+        return c;
+      }
+    }
+    return null;
   }
 
 
-console.log(firstNonRepeatingLetter("mYnameisSUmanBhattaraimyNaMes")) ; // d
+console.log(firstNonRepeatedCharacter("moonmen"));
